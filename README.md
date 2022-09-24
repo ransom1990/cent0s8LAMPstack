@@ -12,4 +12,5 @@ run the following commands to turn the Lamp on
 - bash lamp.sh
 
 Good luck
-OK!
+
+- OK!
