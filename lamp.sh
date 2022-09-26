@@ -37,11 +37,13 @@ sudo dnf install gcc git - y
 sudo dnf install samba -y
 sudo dnf install nmap -y
 sudo dnf install tcpdump -y
+curl rate.sx
 # new stuff 
 sudo wget http://prdownloads.sourceforge.net/webadmin/webmin-2.000-1.noarch.rpm -y
 sudo dnf install perl perl-Net-SSLeay openssl perl-Encode-Detect -y
 sudo rpm -Uvh webmin-2.000-1.noarch.rpm
 sudo firewall-cmd --add-port=10000/tcp --zone=public --permanent
+sudo firewall-cmd --reload
 # localhost:10000 on the VM works - i could not get it to work outside of the VM - using IP address
 curl rate.sx/doge
 sudo dnf install rsync rsync-daemon -y
@@ -54,8 +56,6 @@ sudo wget https://download.opensuse.org/repositories/Archiving:unison/CentOS_8_S
 sudo yum install unison -y
 sudo dnf install neofetch -y
 sudo dnf install htop -y
-sudo dnf install emacs -y
 sudo yum install sl -y
 neofetch
-ls
 sl
