@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # a script to install the LAMP stack pre reqs
-# this script shows you the current crypto market
 # Alexander J Ransom 
 # 9/24/2022
+
 sudo yum install dnf
 sudo dnf update -y
 sudo dnf install epel-release -y
@@ -37,14 +37,12 @@ sudo dnf install gcc git - y
 sudo dnf install samba -y
 sudo dnf install nmap -y
 sudo dnf install tcpdump -y
-curl rate.sx
 # new stuff 
 sudo wget http://prdownloads.sourceforge.net/webadmin/webmin-2.000-1.noarch.rpm -y
 sudo dnf install perl perl-Net-SSLeay openssl perl-Encode-Detect -y
 sudo rpm -Uvh webmin-2.000-1.noarch.rpm
 sudo firewall-cmd --add-port=10000/tcp --zone=public --permanent
 # localhost:10000 on the VM works - i could not get it to work outside of the VM - using IP address
-echo 'doge is down' * 100
 curl rate.sx/doge
 sudo dnf install rsync rsync-daemon -y
 sudo systemctl enable --now rsyncd
@@ -59,6 +57,4 @@ sudo dnf install htop -y
 sudo yum install sl -y
 neofetch
 ls
-curl rate.sx/doge
 sl
-htop
