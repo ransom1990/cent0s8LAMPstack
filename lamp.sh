@@ -4,7 +4,7 @@
 # Alexander J Ransom 
 # 9/24/2022
 
-sudo yum install dnf -y
+sudo yum install dnf
 sudo dnf update -y
 sudo dnf install epel-release -y
 sudo dnf install httpd mariadb-server php php-cli php-json php-mbstring php-pdo php-pecl-zip php-mysqlnd -y
@@ -26,13 +26,21 @@ sudo mysql < sql/create_tables.sql -u root -p
 sudo nano /etc/httpd/conf.d/phpmyadmin.conf
 sudo systemctl start httpd
 sudo systemctl enable httpd
+systemctl status httpd
+systemctl status mariadb
 sudo dnf install firewalld -y
+systemctl status firewalld.service
 sudo firewall-cmd --permanent --list-all
 sudo firewall-cmd --permanent --add-service=http
 sudo firewall-cmd --reload
-sudo dnf install gcc git samba nmap tcpdump -y
+sudo dnf install gcc git - y
+sudo dnf install samba -y
+sudo dnf install nmap -y
+sudo dnf install tcpdump -y
 curl rate.sx
 sudo mv webmin.repo /etc/yum.repos.d/
+sudo wget http://prdownloads.sourceforge.net/webadmin/webmin-2.000-1.noarch.rpm -y
+sudo dnf install perl perl-Net-SSLeay openssl perl-Encode-Detect -y
 sudo wget http://www.webmin.com/jcameron-key.asc
 sudo rpm --import jcameron-key.asc
 sudo dnf install webmin -y
@@ -46,6 +54,9 @@ sudo dnf -y install dnf-plugins-core
 sudo yum install ocaml ocaml-camlp4-devel ctags ctags-etags -y
 sudo cd /etc/yum.repos.d/
 sudo wget https://download.opensuse.org/repositories/Archiving:unison/CentOS_8_Stream/Archiving:unison.repo
-sudo yum install unison neofetch htop sl -y
+sudo yum install unison -y
+sudo dnf install neofetch -y
+sudo dnf install htop -y
+sudo yum install sl -y
 neofetch
 sl
