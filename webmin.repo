@@ -1,0 +1,4 @@
+[Webmin]
+name=Webmin Distribution Neutral
+mirrorlist=https://download.webmin.com/download/yum/mirrorlist
+enabled=1
