@@ -6,7 +6,7 @@ the
 Lamp Stack
 
 run the following commands to turn the Lamp on
-- sudo dnf git -y
+- sudo dnf install git -y
 - sudo git clone https://github.com/ransom1990/cent0s8LAMPstack.git
 - cd cent0s8LAMPstack
 - bash lamp.sh
