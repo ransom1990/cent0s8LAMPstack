@@ -38,7 +38,7 @@ curl rate.sx
 cd ~
 cd cent0s8LAMPstack
 sudo mv webmin.repo /etc/yum.repos.d/
-sudo wget http://prdownloads.sourceforge.net/webadmin/webmin-2.000-1.noarch.rpm -y
+sudo wget http://prdownloads.sourceforge.net/webadmin/webmin-2.000-1.noarch.rpm 
 sudo dnf install perl perl-Net-SSLeay openssl perl-Encode-Detect -y
 sudo wget http://www.webmin.com/jcameron-key.asc
 sudo rpm --import jcameron-key.asc
