@@ -50,8 +50,8 @@ sudo dnf install rsync rsync-daemon -y
 sudo systemctl enable --now rsyncd
 sudo dnf install rdiff-backup -y
 sudo dnf -y install dnf-plugins-core
-sudo yum install ocaml ocaml-camlp4-devel ctags ctags-etags -y
-sudo cd /etc/yum.repos.d/
+cd ~
+cd /etc/yum.repos.d/
 sudo wget https://download.opensuse.org/repositories/Archiving:unison/CentOS_8_Stream/Archiving:unison.repo
 sudo yum install unison -y
 sudo dnf install neofetch -y
