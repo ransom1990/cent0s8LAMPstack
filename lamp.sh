@@ -55,7 +55,5 @@ sudo cd /etc/yum.repos.d/
 sudo wget https://download.opensuse.org/repositories/Archiving:unison/CentOS_8_Stream/Archiving:unison.repo
 sudo yum install unison -y
 sudo dnf install neofetch -y
-sudo dnf install htop -y
 sudo yum install sl -y
-neofetch
 sl
