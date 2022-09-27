@@ -56,4 +56,5 @@ sudo wget https://download.opensuse.org/repositories/Archiving:unison/CentOS_8_S
 sudo yum install unison -y
 sudo dnf install neofetch -y
 sudo yum install sl -y
+sudo dnf install emacs -y
 sl
