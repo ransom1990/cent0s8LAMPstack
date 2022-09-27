@@ -45,7 +45,6 @@ sudo rpm --import jcameron-key.asc
 sudo dnf install webmin -y
 sudo firewall-cmd --add-port=10000/tcp --zone=public --permanent
 sudo firewall-cmd --reload
-curl rate.sx/doge
 sudo dnf install rsync rsync-daemon -y
 sudo systemctl enable --now rsyncd
 sudo dnf install rdiff-backup -y
