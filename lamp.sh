@@ -21,7 +21,6 @@ chown -R apache:apache /var/www/html/phpmyadmin
 sudo chown -R apache:apache /var/www/html/phpmyadmin
 cd phpmyadmin/
 sudo mv config.sample.inc.php config.inc.php
-sudo nano config.inc.php
 sudo mysql < sql/create_tables.sql -u root -p
 sudo nano /etc/httpd/conf.d/phpmyadmin.conf
 sudo systemctl start httpd
