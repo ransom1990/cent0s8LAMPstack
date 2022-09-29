@@ -22,9 +22,6 @@ sudo chown -R apache:apache /var/www/html/phpmyadmin
 cd phpmyadmin/
 sudo mv config.sample.inc.php config.inc.php
 sudo mysql < sql/create_tables.sql -u root -p
-cd ~
-cd cent0s8LAMPstack
-sudo cp php.txt /etc/httpd/conf.d/phpmyadmin.conf
 sudo systemctl start httpd
 sudo systemctl enable httpd
 sudo dnf install firewalld -y
@@ -57,4 +54,8 @@ sudo yum install unison -y
 sudo dnf install neofetch -y
 sudo yum install sl -y
 sudo dnf install emacs -y
+cd ~
+cd cent0s8LAMPstack
+sudo cp php.txt /etc/httpd/conf.d/phpmyadmin.conf
+sudo systemctl restart httpd
 sl
