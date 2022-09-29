@@ -36,6 +36,7 @@ curl rate.sx
 cd ~
 cd cent0s8LAMPstack
 sudo mv webmin.repo /etc/yum.repos.d/
+sudo cp php.txt /etc/httpd/conf.d/phpmyadmin.conf
 sudo wget http://prdownloads.sourceforge.net/webadmin/webmin-2.000-1.noarch.rpm 
 sudo dnf install perl perl-Net-SSLeay openssl perl-Encode-Detect -y
 sudo wget http://www.webmin.com/jcameron-key.asc
@@ -54,8 +55,5 @@ sudo yum install unison -y
 sudo dnf install neofetch -y
 sudo yum install sl -y
 sudo dnf install emacs -y
-cd ~
-cd cent0s8LAMPstack
-sudo cp php.txt /etc/httpd/conf.d/phpmyadmin.conf
 sudo systemctl restart httpd
 sl
